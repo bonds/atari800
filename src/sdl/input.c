@@ -1286,7 +1286,7 @@ static int get_SDL_joystick_state(SDL_Joystick *joystick)
 	int y;
 
 	x = SDL_JoystickGetAxis(joystick, 0);
-	y = SDL_JoystickGetAxis(joystick, 1);
+	y = -SDL_JoystickGetAxis(joystick, 1);
 
 	if (x > minjoy) {
 		if (y < -minjoy)
